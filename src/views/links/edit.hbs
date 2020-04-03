@@ -1,0 +1,34 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+
+            <div class="card">
+                <div class="card-body">
+                    <form action="/links/edit/{{lista.id}} "method="POST">
+                        <div class="form-group">
+                            <input type="text" name="marca" value="{{lista.marca}}"  class="form-control" placeholder="Marca" autofocus>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="modelo" value="{{lista.modelo}}"  class="form-control" placeholder="Modelo">
+                        </div>
+                        
+                        <div class="form-group">
+                             <input type="text" name="año" value="{{lista.año}}"  class="form-control" placeholder="Año">
+                         <div class="form-group">
+                            <textarea name="description" "rows="3" class="form-control" placeholder="Descripción">{{lista.description}}</textarea>
+                        </div>
+                           
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-success btn-block">
+                                Actualizar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
